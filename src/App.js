@@ -5,6 +5,7 @@ import MainPage from "./Components/MainPage/MainPage";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Error404 from "./Components/Error404/Error404";
 import BlogPage from "./Components/BlogPage/BlogPage";
+import Contacts from "./Components/Contacts/Сontacts";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route  path="/" component={MainPage} exact/>
         <Route  path="/error" component={Error404} exact/>
         <Route path="/blog" component={BlogPage} exact />
+        <Route path="/contacts" component={Contacts} exact/>
       </div>
     </Router>
   );
